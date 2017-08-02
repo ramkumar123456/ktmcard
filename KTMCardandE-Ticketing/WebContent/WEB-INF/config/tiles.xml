@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+<tiles-definitions>  
+    <definition name="index1"   template="/WEB-INF/views/index.jsp">  
+      
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp" />  
+        <put-attribute name="menu" value="/WEB-INF/views/menu.jsp" />  
+        <put-attribute name="body" value="/WEB-INF/views/body.jsp" />  
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />  
+    </definition> 
+    <definition name="RegisterAdmin1" extends="index1">
+        <put-attribute name="title" value="RegisterAdmin" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/RegisterAdmin.jsp" />
+    </definition>
+    <definition name="registersuccess1" extends="index1">
+        <put-attribute name="title" value="registersuccess" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/registersuccess.jsp" />
+    </definition>
+    <definition name="aboutus1" extends="index1">
+        <put-attribute name="title" value="AboutUs" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/aboutus.jsp" />
+    </definition>
+    <definition name="contactus1" extends="index1">
+        <put-attribute name="title" value="ContactUs" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/contactus.jsp" />
+    </definition>
+    
+    <definition name="login1" extends="index1">
+        <put-attribute name="title" value="Login" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/login.jsp" />
+    </definition>
+    
+    
+    <definition name="denied1" extends="index1">
+        <put-attribute name="title" value="AccesDenied" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/denied.jsp" />
+    </definition>
+    
+    
+    
+    
+   <!-- change here -->
+   <definition name="applycard1" extends="index1">
+        <put-attribute name="title" value="applycard" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/Home/applycard.jsp" />
+    </definition>
+ 
+
+     <definition name="applycardtopuppage1" extends="index1">
+      <put-attribute name="title" value="applycardtopuppage"/>
+       <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/Home/applycardtopuppage.jsp" />
+    </definition>
+    
+    
+   <!--  <definition name="creditcard1" extends="index1">
+     <put-attribute name="title" value="applycardtopuppage" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/creditcard.jsp" />
+     </definition>
+    <definition name="debitcard1" extends="index1">
+     <put-attribute name="title" value="applycardtopuppage" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/debitcard.jsp" />
+     </definition>
+     <definition name="netbanking1" extends="index1">
+      <put-attribute name="title" value="applycardtopuppage" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/netbanking.jsp" />
+     </definition> -->
+       <definition name="homepaymentsuccess1" extends="index1">
+      <put-attribute name="title" value="homepaymentsuccess" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/homepaymentsuccess.jsp" />
+     </definition>
+     <definition name="cardbookticket" extends="index1">
+       <!--  <put-attribute name="title" value="Cardbookticket" /> -->
+        <put-attribute name="body" value="/WEB-INF/views/Home/cardbookticket.jsp" />
+    </definition>
+    
+     <definition name="cardtrainsearch2" extends="index1">
+       <!--  <put-attribute name="title" value="Cardbookticket" /> -->
+        <put-attribute name="body" value="/WEB-INF/views/Home/findtrainscounter.jsp" />
+    </definition>
+     
+     <definition name="findtrainscountersuccess2" extends="index1">
+       <!--  <put-attribute name="title" value="Cardbookticket" /> -->
+        <put-attribute name="body" value="/WEB-INF/views/Home/findtrainscountersuccess.jsp" />
+        
+        
+    </definition>
+    
+    <definition name="jurneyperformtkt1" template="/WEB-INF/views/Home/jurneyperformtkt.jsp">
+       
+    </definition>
+    
+    
+    
+    <definition name="insufficentbalpage1" template="/WEB-INF/views/Home/insufficentbalpage.jsp">
+       
+    </definition>
+    
+    
+    <definition name="cardfailurepage2" extends="index1">
+       <!--  <put-attribute name="title" value="Cardbookticket" /> -->
+        <put-attribute name="body" value="/WEB-INF/views/Home/cardfailurepage.jsp" />
+    </definition>
+    
+     <definition name="cardbooksearch" extends="index1">
+       <!--  <put-attribute name="title" value="Cardbookticket" /> -->
+        <put-attribute name="body" value="/WEB-INF/views/Home/cardbooksearch.jsp" />
+        </definition>
+        
+        
+    <definition name="cardbookticketcounter" extends="index1">
+       <!--  <put-attribute name="title" value="Cardbookticket" /> -->
+        <put-attribute name="body" value="/WEB-INF/views/Home/cardbookticketcounter.jsp" />
+    </definition>
+    
+    <definition name="loginfailure1" extends="index1">
+        <put-attribute name="title" value="loginfailure" />
+         <put-attribute name="body" value="/WEB-INF/views/Home/loginfailure.jsp" />
+    </definition>
+    <definition name="forgotpassword1" extends="index1">
+        <put-attribute name="title" value="forgotpassword" />
+         <put-attribute name="body" value="/WEB-INF/views/Home/forgotpassword.jsp" />
+    </definition>
+    <definition name="checkforgotpassword1" extends="index1">
+        <put-attribute name="title" value="checkforgotpassword" />
+         <put-attribute name="body" value="/WEB-INF/views/Home/forgotpasswordsucc.jsp" />
+    </definition>
+    <definition name="forgotpassworderror" extends="index1">
+        <put-attribute name="title" value="forgotpassworderrorr" />
+         <put-attribute name="body" value="/WEB-INF/views/Home/forgotpassworderror.jsp" />
+    </definition>
+    
+   <!--   Admin tiles -->
+   
+   
+   <definition name="adminhome" extends="index1">
+        <put-attribute name="title" value="AdminHomePage" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/adminhome.jsp" />
+    </definition>
+    
+     <definition name="adminhome1" extends="index1">
+        <put-attribute name="title" value="AdminHomePage" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/adminhome.jsp" />
+    </definition>
+    <definition name="counters1" extends="index1">
+        <put-attribute name="title" value="Counters" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/counters.jsp" />
+    </definition>
+     <definition name="addcounter1" template="/WEB-INF/views/Admin/addcounter.jsp">
+       </definition>
+    
+     <definition name="addcountersucc1" extends="index1">
+        <put-attribute name="title" value="addcountersucc" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/addcountersucc.jsp" />
+    </definition>
+     <definition name="requestedcards1" extends="index1">
+        <put-attribute name="title" value="requestedcards" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/requestedcards.jsp" />
+    </definition>
+     <definition name="approvedcardsuccess1" extends="index1">
+        <put-attribute name="title" value="approvedcardsuccess" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/approvedcardsuccess.jsp" />
+    </definition>
+    <definition name="rejectcardsuccess1" extends="index1">
+        <put-attribute name="title" value="rejectcardsuccess" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/rejectcardsuccess.jsp" />
+    
+    </definition>
+    <definition name="updatecounter1" template="/WEB-INF/views/Admin/updatecounter.jsp">
+        
+    </definition>
+    <definition name="updatecountersuccs1" extends="index1">
+        <put-attribute name="title" value="updatecountersuccs" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/updatecountersucc.jsp" />
+    </definition>
+    
+    <definition name="deletecounter1" extends="index1">
+        <put-attribute name="title" value="deletecounter" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/deletecounter.jsp" />
+    </definition>
+     <definition name="adminupdateprofile1" extends="index1">
+        <put-attribute name="title" value="adminupdateprofile" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/adminupdateprofile.jsp" />
+    </definition>
+     <definition name="adminchangepassword1" extends="index1">
+        <put-attribute name="title" value="adminchangepassword" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/adminchangepassword.jsp" />
+    </definition>
+    <definition name="adminchangepassworderror" extends="index1">
+        <put-attribute name="title" value="adminchangepassworderrorr" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/adminchangepassworderror.jsp" />
+    </definition>
+      <definition name="viewstations" extends="index1">
+        <put-attribute name="title" value="view stations" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/viewstations.jsp" />
+    </definition>
+    
+    <!-- <definition name="addstation1" extends="index1">
+        <put-attribute name="title" value="add station1" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/addstation.jsp" />
+    </definition> -->
+    <definition name="addstation1" template="/WEB-INF/views/Admin/addstation.jsp">
+       </definition>
+      
+       
+       <definition name="addstationsuccess" extends="index1">
+        <put-attribute name="title" value="add station1" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/addstationsuccess.jsp" />
+    </definition>
+       
+       
+    <definition name="updatestation1" template="/WEB-INF/views/Admin/updatestation.jsp">
+        </definition>
+    
+    <definition name="updatestationsuccess1" extends="index1">
+        <put-attribute name="title" value="update station" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/updatestationsucc.jsp" />
+    </definition>
+    
+    <definition name="deletestationsucc" extends="index1">
+        <put-attribute name="title" value="update station" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/viewstations.jsp" />
+    </definition>
+    
+    
+    
+    <definition name="viewtrains1" extends="index1">
+        <put-attribute name="title" value="viewtrainss" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/viewtrains.jsp" />
+    </definition>
+    
+    <definition name="addtrains1" extends="index1">
+        <put-attribute name="title" value="addtrainss" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/addtrains.jsp" />
+    </definition>
+    
+     <definition name="updatetrain1" extends="index1">
+        <put-attribute name="title" value="updatetrain" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/updatetrains.jsp" />
+    </definition>
+    
+     <definition name="deletetrainsucc" extends="index1">
+        <put-attribute name="title" value="Deletestation" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/adminmenu.jsp" />
+         <put-attribute name="body" value="/WEB-INF/views/Admin/viewtrains.jsp" />
+    </definition>
+    
+    
+    
+    
+    
+    
+    
+     <definition name="adminlogout1" extends="index1">
+        <put-attribute name="title" value="adminlogout" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/menu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Admin/adminlogout.jsp" />
+    </definition>
+    
+ 
+    
+   <!--  Counter Tiles -->
+    
+    
+    <definition name="counterlogin1" extends="index1">
+        <put-attribute name="title" value="counterlogin" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/counterhome.jsp" />
+    </definition>
+    <definition name="bookticketcounter" extends="index1">
+        <put-attribute name="title" value="counterlogin" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/ticketbookcounter.jsp" />
+    </definition>
+    <definition name="issuecardcounter" extends="index1">
+        <put-attribute name="title" value="counterlogin" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/issuecardcounter.jsp" />
+    </definition>
+    <definition name="counterhome1" extends="index1">
+        <put-attribute name="title" value="counterhome" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/counterhome.jsp" />
+    </definition>
+     <definition name="printjourneytkt" template="/WEB-INF/views/printjourneytkt.jsp">
+    </definition>
+    <definition name="bookticket1" extends="index1">
+        <put-attribute name="title" value="bookticket" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/bookticket.jsp" />
+    </definition>
+    <definition name="booksearch1" extends="index1">
+        <put-attribute name="title" value="booksearch" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/booksearch.jsp" />
+    </definition>
+    <definition name="conformtrain1" template="/WEB-INF/views/conformtrain.jsp">
+        <!-- <put-attribute name="title" value="conformtrain" />
+         <put-attribute name="menu" value="/WEB-INF/views/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/conformtrain.jsp" /> -->
+    </definition>
+    <definition name="conformticket1" template="/WEB-INF/views/conformticket.jsp">
+        <!-- <put-attribute name="title" value="conformticket" />
+         <put-attribute name="menu" value="/WEB-INF/views/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/conformticket.jsp" /> -->
+    </definition>
+     <definition name="payment1" extends="index1">
+        <put-attribute name="title" value="payment" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/payment.jsp" />
+    </definition>
+     <definition name="counterapplycard1" extends="index1">
+        <put-attribute name="title" value="counterapplycard" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/counterapplycard.jsp" />
+    </definition>
+    <definition name="counterapplycardtopup1" extends="index1">
+        <put-attribute name="title" value="counterapplycardtopup" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/counterapplycardtopup.jsp" />
+    </definition>
+    
+        <definition name="counteraplycardsus2" extends="index1">
+        <put-attribute name="title" value="counterapplycardtopup" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/counteraplycardsus.jsp" />
+    </definition>
+    
+    
+    
+    <definition name="cardpaymentsucc1" extends="index1">
+        <put-attribute name="title" value="cardpaymentsuccess1" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/cardpaymentsuccess.jsp" />
+    </definition>
+    <definition name="tickets1" extends="index1">
+        <put-attribute name="title" value="tickets" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/tickets.jsp" />
+    </definition>
+    <definition name="cancelticket1" extends="index1">
+        <put-attribute name="title" value="cancelticket" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/cancelticket.jsp" />
+    </definition>
+     <definition name="counterupdateprofile1" extends="index1">
+        <put-attribute name="title" value="counterupdateprofile" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/counterupdateprofile.jsp" />
+    </definition>
+    <definition name="updatecountersucc1" extends="index1">
+        <put-attribute name="title" value="updatecountersucc" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/updatecountersucc.jsp" />
+    </definition>
+     <definition name="counterchangepassword1" extends="index1">
+        <put-attribute name="title" value="counterchangepassword" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/counterchangepassword.jsp" />
+    </definition>
+  
+    <definition name="counterchpwdsuccess" extends="index1">
+        <put-attribute name="title" value="counterchangepassword" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/counterchpwdsucc.jsp" />
+    </definition>
+    <definition name="counterchpwdfail" extends="index1">
+        <put-attribute name="title" value="counterchangepassword" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/counterchpwdfail.jsp" />
+    </definition>
+     <definition name="counterlogout1" extends="index1">
+        <put-attribute name="title" value="counterlogout" />
+         <put-attribute name="menu" value="/WEB-INF/views/menu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/counterlogout.jsp" />
+    </definition>
+    
+    
+     <definition name="findtrainscounter" extends="index1">
+        <put-attribute name="title" value="counterchangepassword" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/findtrainscounter.jsp" />
+    </definition>
+    
+    <definition name="findtrainscountersuccess" extends="index1">
+        <put-attribute name="title" value="counterchangepassword" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/findtrainscountersuccess.jsp" />
+    </definition>
+    <definition name="jurneyperformtkt" template="/WEB-INF/views/Counter/jurneyperformtkt.jsp">
+      
+    </definition>
+    
+     <definition name="findtrainscountersuccess" extends="index1">
+        <put-attribute name="title" value="counterchangepassword" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/findtrainscountersuccess.jsp" />
+    </definition>
+    
+    <definition name="tktscount" extends="index1">
+        <put-attribute name="title" value="counterchangepassword" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/tktscount.jsp" />
+    </definition>
+    
+     <definition name="tktscountfind" extends="index1">
+        <put-attribute name="title" value="counterchangepassword" />
+         <put-attribute name="menu" value="/WEB-INF/views/Menu/countermenu.jsp" />  
+         <put-attribute name="body" value="/WEB-INF/views/Counter/tktscountfind.jsp" />
+    </definition>
+    
+     <definition name="trainsstopdetails" template="/WEB-INF/views/Counter/trainsstopdetails.jsp">
+      
+    </definition>
+    
+    
+    
+    
+    
+    
+    
+    <!--     USER TILES.................. -->
+
+ <definition name="userlogin1" extends="index1">
+        <put-attribute name="title" value="userlogin"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+         <put-attribute name="body" value="/WEB-INF/views/User/usermenu.jsp" />
+    </definition>
+    
+    
+    <definition name="userhome2" extends="index1">
+        <put-attribute name="title" value="userhome"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+         <put-attribute name="body" value="/WEB-INF/views/User/usermenu.jsp" />
+    </definition>
+    
+     <definition name="userupdate2" extends="index1">
+        <put-attribute name="title" value="USERDETAILSS"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/userupdate.jsp"></put-attribute>
+    </definition>
+    
+     <definition name="usereditsave2" extends="index1">
+        <put-attribute name="title" value="USERDETAILSSAVING"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/usereditsave.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="bookticket22" extends="index1">
+        <put-attribute name="title" value="booktickting"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/bookticket.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="bookticketuser1" extends="index1">
+        <put-attribute name="title" value="bookticketuser" />
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+         <put-attribute name="body" value="/WEB-INF/views/User/bookticketuser.jsp" />
+    </definition>
+    
+    
+      <definition name="trainslist2" extends="index1">
+        <put-attribute name="title" value="listoftrains"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/trainslist.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="faredetails2" extends="index1">
+        <put-attribute name="title" value="fairdetailspage"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/faredetails.jsp"></put-attribute>
+    </definition>
+    
+    
+    <definition name="bookingnow2" extends="index1">
+        <put-attribute name="title" value="fairdetailspage"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/ticketdetails.jsp"></put-attribute>
+    </definition>
+    
+    
+    <definition name="paymentmodepage2" template="/WEB-INF/views/User/paymentmodepage.jsp">
+        
+    </definition>
+    
+    
+     <definition name="ktmcard2" template="/WEB-INF/views/User/ktmcard.jsp">
+        
+    </definition>
+    
+         <definition name="homepaymentsuccess2" template="/WEB-INF/views/User/homepaymentsuccess.jsp">
+        
+    </definition>
+    
+    
+      <definition name="creditcard2" template="/WEB-INF/views/User/creditcard.jsp">
+        
+    </definition>
+    
+    <definition name="debitcard2" template="/WEB-INF/views/User/debitcard.jsp">
+      
+    </definition>
+    
+    <definition name="netbanking2" template="/WEB-INF/views/User/netbanking.jsp">
+        
+    </definition>
+     <definition name="creditcardrecharge1" extends="index1">
+        <put-attribute name="title" value="creditcardrechargee"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/creditcardrecharge.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="debitcardrecharge1" extends="index1">
+        <put-attribute name="title" value="debitcardrechargee"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/debitcardrecharge.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="netbankingrecharge1" extends="index1">
+        <put-attribute name="title" value="netbankingrechargeg"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/netbankingrecharge.jsp"></put-attribute>
+    </definition>
+    
+     <definition name="paymentrechargesuccess1" extends="index1">
+        <put-attribute name="title" value="paymentrechargesuccess112"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/paymentrechargesuccess.jsp"></put-attribute>
+    </definition>
+    
+   
+    
+      <definition name="rechargecard2" extends="index1">
+        <put-attribute name="title" value="RECHARGECARD"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/rechargecard.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="failurecardpage1" extends="index1">
+        <put-attribute name="title" value="FAILURECARD"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/failurecardpage.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="paymentpage22" extends="index1">
+        <put-attribute name="title" value="paymentpageofapplycard"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/paymentpage2.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="creditcard11" extends="index1">
+        <put-attribute name="title" value="paymentpageofapplycard"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/aplcreditcard1.jsp"></put-attribute>
+    </definition>
+    
+     <definition name="debitcard11" extends="index1">
+        <put-attribute name="title" value="paymentpageofapplycard"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/apldebitcard1.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="netbanking11" extends="index1">
+        <put-attribute name="title" value="paymentpageofapplycard"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/aplnetbank1.jsp"></put-attribute>
+    </definition>
+    
+     <definition name="rechargesus2" extends="index1">
+        <put-attribute name="title" value="paymentpageofapplycard"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/rechargesus.jsp"></put-attribute>
+    </definition>
+    
+    
+      <definition name="rechargepaymentpage2" extends="index1">
+        <put-attribute name="title" value="RECHARGECARDPAYMENTPAGE"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/rechargepaymentpage.jsp"></put-attribute>
+    </definition>
+    
+    
+      
+     <definition name="topuptransactions2" extends="index1">
+        <put-attribute name="title" value="RECHARGECARDPAYMENTPAGE"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/topuptransactions.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="viewbalance2" extends="index1">
+        <put-attribute name="title" value="RECHARGECARDPAYMENTPAGE"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/viewbalance.jsp"></put-attribute>
+    </definition>
+    
+     <definition name="availablebalance2" extends="index1">
+        <put-attribute name="title" value="availablebalancee"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/availablebalance.jsp"></put-attribute>
+    </definition>
+    
+     <definition name="balancefailurepage2" extends="index1">
+        <put-attribute name="title" value="BALANCEFAILUREPAGE"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/balancefailurepage.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="changepassword2" extends="index1">
+        <put-attribute name="title" value="RECHARGECARDPAYMENTPAGE"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/changepassword.jsp"></put-attribute>
+    </definition>
+    
+     <definition name="userchangepasssus2" extends="index1">
+        <put-attribute name="title" value="RECHARGECARDPAYMENTPAGE"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/userchangepasssus.jsp"></put-attribute>
+    </definition>
+    
+       <definition name="userchangepassworderror" extends="index1">
+        <put-attribute name="title" value="userchangepassworderrorr"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/userchangepassworderror.jsp"></put-attribute>
+    </definition>
+    
+    <!-- apply card paymentpage.... -->
+     <definition name="paymentpage2" extends="index1">
+        <put-attribute name="title" value="paymentpageofapplycard"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/paymentpage.jsp"></put-attribute>
+    </definition>
+    
+    <definition name="creditcard1" extends="index1">
+        <put-attribute name="title" value="paymentpageofapplycard"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/aplcreditcard.jsp"></put-attribute>
+    </definition>
+    
+     <definition name="debitcard1" extends="index1">
+        <put-attribute name="title" value="paymentpageofapplycard"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/apldebitcard.jsp"></put-attribute>
+    </definition>
+    
+      <definition name="netbanking1" extends="index1">
+        <put-attribute name="title" value="paymentpageofapplycard"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/aplnetbank.jsp"></put-attribute>
+    </definition>
+    
+     <definition name="aplpaymentsuccess2" extends="index1">
+      <put-attribute name="title" value="paymentsuccess" />
+      <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+        <put-attribute name="body" value="/WEB-INF/views/User/aplpaymentsuccess.jsp" />
+     </definition>
+     
+     
+      <definition name="cardstatus2" extends="index1">
+      <put-attribute name="title" value="paymentsuccess" />
+      <put-attribute name="menu" value="/WEB-INF/views/Menu/menuuser.jsp"></put-attribute>
+      <put-attribute name="body" value="/WEB-INF/views/User/cardstatus.jsp" />
+     </definition>
+    
+    
+    
+    
+     <definition name="sessionexpforsup1" extends="index1">
+        <put-attribute name="title" value="SessionExpired" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/sessionexpforsup.jsp" />
+    </definition>
+    
+    <definition name="sessionexp" extends="index1">
+        <put-attribute name="title" value="SessionExpired" />
+        <put-attribute name="body" value="/WEB-INF/views/Home/sessionexp.jsp" />
+    </definition>
+    
+    </tiles-definitions> 
