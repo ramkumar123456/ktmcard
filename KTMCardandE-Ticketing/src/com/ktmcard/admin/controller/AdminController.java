@@ -45,7 +45,7 @@ import com.ktmcard.home.model.ApplyCardModel;
 import com.ktmcard.home.model.RegistrationModel;
 import com.ktmcard.home.service.HomeService;
 import com.ktmcard.home.validator.RegistrationValidator;
-
+// This is an Admin Controller
 @Controller
 public class AdminController {
 	private Logger log = Logger.getLogger(AdminController.class);
